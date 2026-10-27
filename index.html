@@ -1,1 +1,206 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FreshNest Cleaning offers reliable home and office cleaning services.">
+  <title>FreshNest Cleaning | A Fresh Start</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #167d63;
+      --dark: #15352f;
+      --light: #f2f8f5;
+      --text: #52645e;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1120px, 90%); margin: auto; }
+    header { background: white; border-bottom: 1px solid #e4eee9; }
+    nav {
+      min-height: 76px; display: flex; align-items: center;
+      justify-content: space-between; gap: 20px;
+    }
+    .logo { font-size: 23px; font-weight: 800; color: var(--green); }
+    .nav-links { display: flex; gap: 25px; align-items: center; }
+    .button {
+      display: inline-block; background: var(--green); color: white;
+      padding: 13px 22px; border-radius: 8px; font-weight: bold;
+      border: 0; cursor: pointer;
+    }
+    .hero {
+      background: linear-gradient(120deg, #eff8f2, #d9eee5);
+      padding: 85px 0;
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.05fr .95fr;
+      align-items: center; gap: 45px;
+    }
+    .eyebrow {
+      color: var(--green); font-weight: bold;
+      text-transform: uppercase; letter-spacing: 2px; font-size: 13px;
+    }
+    h1 { font-size: clamp(38px, 5vw, 62px); line-height: 1.08; margin: 16px 0; }
+    .hero p { color: var(--text); font-size: 18px; margin-bottom: 25px; }
+    .hero-image {
+      min-height: 350px; border-radius: 24px;
+      background: linear-gradient(145deg, #b9dfce, #5caa8d);
+      display: grid; place-items: center; padding: 30px;
+    }
+    .image-card {
+      background: white; border-radius: 20px; padding: 35px;
+      text-align: center; width: 100%; box-shadow: 0 15px 45px #174b3920;
+    }
+    .image-card .emoji { font-size: 76px; }
+    .image-card h3 { font-size: 24px; margin-top: 10px; }
+    section { padding: 75px 0; }
+    .section-heading { text-align: center; max-width: 650px; margin: 0 auto 38px; }
+    .section-heading h2 { font-size: 36px; margin-bottom: 10px; }
+    .section-heading p, .service p { color: var(--text); }
+    .services {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+    }
+    .service {
+      padding: 28px; border: 1px solid #e2ece7;
+      border-radius: 16px; background: white;
+    }
+    .service .emoji { font-size: 36px; }
+    .service h3 { margin: 12px 0 8px; }
+    .why { background: var(--light); }
+    .why-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 35px;
+      align-items: center;
+    }
+    .why h2 { font-size: 36px; line-height: 1.2; margin: 12px 0; }
+    .checks { list-style: none; margin-top: 20px; }
+    .checks li { margin: 12px 0; }
+    .checks li::before { content: "✓"; color: var(--green); font-weight: bold; margin-right: 10px; }
+    .quote {
+      background: white; padding: 30px; border-radius: 18px;
+      border: 1px solid #e2ece7;
+    }
+    .contact { background: var(--dark); color: white; text-align: center; }
+    .contact p { color: #d0e0d9; margin: 12px 0 25px; }
+    footer { padding: 25px 0; text-align: center; color: var(--text); font-size: 14px; }
+    @media (max-width: 760px) {
+      .nav-links { gap: 12px; font-size: 14px; }
+      .nav-links .button { padding: 9px 12px; }
+      .hero { padding: 55px 0; }
+      .hero-grid, .why-grid { grid-template-columns: 1fr; }
+      .hero-image { min-height: 260px; }
+      .services { grid-template-columns: 1fr; }
+      section { padding: 55px 0; }
+      .section-heading h2, .why h2 { font-size: 30px; }
+    }
+    @media (max-width: 430px) {
+      nav { align-items: flex-start; padding: 18px 0; flex-direction: column; }
+      .nav-links { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a class="logo" href="#home">✦ FreshNest</a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a class="button" href="#contact">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">A cleaner home, a happier you</span>
+          <h1>Come Home to Clean.</h1>
+          <p>Professional home and office cleaning that gives you more time for what matters most.</p>
+          <a class="button" href="#contact">Request a Free Quote →</a>
+        </div>
+        <div class="hero-image">
+          <div class="image-card">
+            <div class="emoji">🪴 ✨ 🧹</div>
+            <h3>Fresh spaces. Fresh starts.</h3>
+            <p>Thoughtful cleaning, every time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">What we do</span>
+          <h2>Cleaning Made Simple</h2>
+          <p>Flexible cleaning services designed around your home, your schedule, and your needs.</p>
+        </div>
+        <div class="services">
+          <article class="service">
+            <div class="emoji">🏡</div>
+            <h3>Home Cleaning</h3>
+            <p>Keep your living spaces fresh, tidy, and comfortable with regular or one-time cleaning.</p>
+          </article>
+          <article class="service">
+            <div class="emoji">🏢</div>
+            <h3>Office Cleaning</h3>
+            <p>A clean, welcoming workplace helps your team feel focused and ready for the day.</p>
+          </article>
+          <article class="service">
+            <div class="emoji">✨</div>
+            <h3>Deep Cleaning</h3>
+            <p>Extra attention for those hard-to-reach places and the details that make a difference.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="about">
+      <div class="container why-grid">
+        <div>
+          <span class="eyebrow">Why FreshNest</span>
+          <h2>More than clean. Peace of mind.</h2>
+          <p>We believe a clean space can make everyday life feel lighter. Our sample business is built around care, consistency, and clear communication.</p>
+          <ul class="checks">
+            <li>Flexible scheduling options</li>
+            <li>Detail-focused cleaning checklist</li>
+            <li>Friendly, professional service</li>
+            <li>Clear quotes with no surprises</li>
+          </ul>
+        </div>
+        <div class="quote">
+          <span class="eyebrow">Our promise</span>
+          <h3 style="font-size: 27px; margin: 12px 0;">Your space deserves a fresh start.</h3>
+          <p>From a quick refresh to a detailed clean, we aim to make your space feel welcoming and cared for.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <span class="eyebrow" style="color:#9de3c6;">Let's get started</span>
+        <h2 style="font-size: 38px; margin-top: 10px;">Ready for a Fresher Space?</h2>
+        <p>Tell us what you need, and we'll help you plan your clean.</p>
+        <a class="button" style="background:white;color:#15352f;" href="mailto:hello@example.com?subject=Cleaning%20Quote">Email Us for a Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> FreshNest Cleaning. Sample portfolio website.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
